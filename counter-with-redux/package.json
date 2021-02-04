@@ -2,7 +2,7 @@
   "name": "counter-redux",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wladiosan.github.io/counter-with-redux/",
+  "homepage": "https://wladiosan.github.io/counter-with-redux",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
