@@ -211,7 +211,6 @@
 .experience-info {
     width: 90%;
     box-sizing: border-box;
-    border: 1px solid yellow;
 }
 
 .experience-header {
@@ -235,6 +234,15 @@
 .experience-header span {
     margin-left: 20px;
     font-size: 26px;
+}
+
+.experience-items hr {
+    height: 2px;
+    background: #4FC7E6;
+}
+
+.experience-item {
+    margin-top: 10px;
 }
 
 .company-info {
@@ -262,9 +270,107 @@
 .company-responsibility {
     margin-left: 30px;
     margin-bottom: 10px;
+    font-weight: 100;
 }
 
-.experience-items hr {
-    height: 2px;
-    background: #4FC7E6;
+.education-info {
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.education-header {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.education-header img {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.education-header span {
+    margin-left: 20px;
+    font-size: 26px;
+}
+
+.education-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-name span {
+    margin: 0;
+}
+
+.education-level {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.courses-info {
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.courses-header {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.courses-header img {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.courses-header span {
+    margin-left: 20px;
+    font-size: 26px;
+}
+
+.about-info {
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.about-header {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.about-header img {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.about-header span {
+    margin-left: 20px;
+    font-size: 26px;
+}
+
+.about-content {
+    font-style: italic;
 }
