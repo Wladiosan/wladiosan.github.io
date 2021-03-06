@@ -20,8 +20,10 @@ chekCounter = counter => {
 checkDisable = counter => {
     if (counter === 0) {
         slider.prevButton.classList.add('disabled')
+        slider.nextButton.classList.remove('disabled')
     } else if (counter === 2) {
         slider.nextButton.classList.add('disabled')
+        slider.prevButton.classList.remove('disabled')
     } else {
         slider.prevButton.classList.remove('disabled')
         slider.nextButton.classList.remove('disabled')
@@ -45,6 +47,14 @@ onClickNextButton = props => {
     checkDisable(slider.currentIndexImg)
 }
 
+undublcode = counter => {
+    chekCounter(counter)
+    checkDisable(counter)
+    slider.imgSlider.src = slider.arrayImg[counter]
+    slider.currentIndexImg = counter
+}
+
+
 // Запуск приложение
 init = () => {
     slider.arrayImg.push('img/slider/slider-0.jpeg')
@@ -54,9 +64,15 @@ init = () => {
     slider.prevButton.addEventListener('click', (e) => onClickPrevButton(e))
     slider.nextButton.addEventListener('click', (e) => onClickNextButton(e))
 
-    slider.circles[0].addEventListener('click', () => chekCounter(0))
-    slider.circles[1].addEventListener('click', () => chekCounter(1))
-    slider.circles[2].addEventListener('click', () => chekCounter(2))
+    slider.circles[0].addEventListener('click', (e) => {
+        undublcode(0)
+    })
+    slider.circles[1].addEventListener('click', (e) => {
+        undublcode(1)
+    })
+    slider.circles[2].addEventListener('click', (e) => {
+        undublcode(2)
+    })
 
     slider.imgSlider.src = slider.arrayImg[slider.currentIndexImg]
     slider.circles[slider.currentIndexImg].classList.add('grey')
